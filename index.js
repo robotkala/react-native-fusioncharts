@@ -1,6 +1,6 @@
 import React from 'react';
-import { ScrollView } from 'react-native';
 import ReactNativeFusionCharts from './src/FusionCharts';
+import {View} from "react-native";
 
 const App = (props) => {
   const {
@@ -14,7 +14,7 @@ const App = (props) => {
   } = props.chartConfig;
 
   return (
-    <ScrollView>
+    <View>
       <ReactNativeFusionCharts
         type={type}
         width={width}
@@ -27,7 +27,7 @@ const App = (props) => {
         events={props.events}
         {...props}
       />
-    </ScrollView>
+    </View>
   );
 }
 
